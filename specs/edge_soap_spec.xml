@@ -1,0 +1,19 @@
+<!--
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:sms="http://provider.com/sms">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <sms:ChargeSMS>
+      <sms:UserID>edgeXML</sms:UserID>
+      <sms:PhoneNumber>+15550002222</sms:PhoneNumber>
+      <sms:MessageID>xmsg</sms:MessageID>
+      <sms:Timestamp>2025-02-02T02:02:02Z</sms:Timestamp>
+      <sms:ChargeAmount>0.07</sms:ChargeAmount>
+      <sms:Currency>GBP</sms:Currency>
+      <!-- CDATA & extra nodes to test stripping -->
+      <sms:Notes><![CDATA[<foo>bar</foo>]]></sms:Notes>
+      <sms:Unused>ignore me</sms:Unused>
+    </sms:ChargeSMS>
+  </soapenv:Body>
+</soapenv:Envelope>
+-->

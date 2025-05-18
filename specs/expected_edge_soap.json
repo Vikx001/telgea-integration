@@ -1,0 +1,23 @@
+{
+  "telgea_user_id": "edgeXML",
+  "msisdn": "+15550002222",
+  "usage_data": {
+    "total_mb": 0,
+    "roaming_mb": 0,
+    "country": "",
+    "network_type": "",
+    "provider_code": ""
+  },
+  "sms_charges": [
+    {
+      "message_id": "xmsg",
+      "timestamp": "2025-02-02T02:02:02Z",
+      "amount": 0.07,
+      "currency": "GBP"
+    }
+  ],
+  "billing_period": {
+    "start": "2025-02-02T02:02:02Z",
+    "end":   "2025-02-02T02:02:02Z"
+  }
+}

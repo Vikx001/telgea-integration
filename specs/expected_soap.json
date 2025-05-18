@@ -1,0 +1,24 @@
+
+{
+  "telgea_user_id": "abc123",
+  "msisdn": "+46701234567",
+  "usage_data": {             
+    "total_mb": 0,
+    "roaming_mb": 0,
+    "country": "",
+    "network_type": "",
+    "provider_code": ""
+  },
+  "sms_charges": [
+    {
+      "message_id": "msg789",
+      "timestamp": "2025-04-01T12:30:00Z",
+      "amount": 0.05,
+      "currency": "EUR"
+    }
+  ],
+  "billing_period": {
+    "start": "2025-04-01T12:30:00Z",
+    "end":   "2025-04-01T12:30:00Z"
+  }
+}
