@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   root: 'src/web',
   build: {
-    outDir: '../../dist', 
+    outDir: 'dist', 
     emptyOutDir: true
   }
 });
