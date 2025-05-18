@@ -153,7 +153,7 @@ npm run dev
 
 ---
 
-## 🧼 Dev Conventions
+##  Dev Conventions
 
 - ESLint: Applied via `.eslintrc.json`
 - Jest: All tests under `/tests`
