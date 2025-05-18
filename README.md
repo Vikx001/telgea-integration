@@ -188,3 +188,20 @@ Fork and PRs welcome!
 
 **Author:** [Vikash Sharma](https://github.com/Vikx001)  
 **License:** MIT
+
+## Test Passed 
+
+<img width="369" alt="image" src="https://github.com/user-attachments/assets/249a63fe-fd4c-4063-9255-a40761245103" />
+
+
+##  Working UI
+
+<img width="1679" alt="image" src="https://github.com/user-attachments/assets/b5fd42b4-ac08-43b2-a853-dfa4a79f6608" />
+<img width="1679" alt="image" src="https://github.com/user-attachments/assets/12503818-1b7a-4436-8f58-3dc3e2f5d451" />
+
+## CLI working 
+
+<img width="594" alt="image" src="https://github.com/user-attachments/assets/7d01b272-d0f5-4658-8f13-76fb4578fb66" />
+
+
+
