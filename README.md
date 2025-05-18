@@ -84,7 +84,7 @@ TELGEA-TEST/
 
 ---
 
-## 🔁 Normalization Format (`InternalApiFormat`)
+##  Normalization Format (`InternalApiFormat`)
 
 ```ts
 interface InternalApiFormat {
@@ -106,6 +106,19 @@ interface InternalApiFormat {
 ```
 
 ---
+
+##  Why It Doesn’t Work on Vercel UI
+
+Vercel only supports **static frontend deployments** by default.  
+However, this app's converters (`soapToNormalized` and `restToNormalized`) depend on **Node.js-only modules** like `fs`, which **are not available in the browser**.
+
+###  Result:
+- The frontend UI shows up on Vercel.
+- But conversions don’t run due to missing Node APIs in the browser.
+- This is a technical limitation of serverless/static deployment, not the code.
+
+---
+
 
 ## Usage
 
@@ -142,7 +155,7 @@ npm run dev
 
 ---
 
-## ⚖ Trade-Offs
+## Trade-Offs
 
 | Decision                     | Rationale |
 |-----------------------------|-----------|
@@ -158,6 +171,14 @@ npm run dev
 - ESLint: Applied via `.eslintrc.json`
 - Jest: All tests under `/tests`
 - TS: Interfaces and strict null checks
+
+---
+
+## Final Note
+
+While the UI is deployable, full functionality **only works locally** due to Node-only transformation logic.
+
+If full online support is needed, the logic would need to be migrated to browser-safe code or moved into serverless API routes.
 
 ---
 
