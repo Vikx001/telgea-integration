@@ -1,9 +1,10 @@
+// vite.config.js
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: 'src/web',            // <-- tells Vite where index.html lives
+  root: 'src/web',
   build: {
-    outDir: '../../web-dist', // keeps build outside src/web
+    outDir: '../../dist', 
     emptyOutDir: true
   }
 });

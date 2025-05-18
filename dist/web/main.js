@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-// src/web/main.ts -----------------------------------------------------------
+// src/web/main.ts 
 const soapToNormalized_1 = require("../converters/soapToNormalized");
 const restToNormalized_1 = require("../converters/restToNormalized");
 const file = document.getElementById('file');
@@ -9,7 +9,7 @@ const outBox = document.getElementById('out');
 const dlBtn = document.getElementById('download');
 // remember which converter we last used (needed for live-editing)
 let lastWasXML = false;
-/* --------------------------- helpers ------------------------------------ */
+/* helpers  */
 async function convert(text) {
     if (!text.trim()) {
         dlBtn.hidden = true;
@@ -30,7 +30,7 @@ async function convert(text) {
         return ` ${err.message}`;
     }
 }
-/* ---------------------- debounce utility (30 loc) ----------------------- */
+/* debounce utility (30 loc)  */
 function debounce(fn, ms = 300) {
     let id;
     return (...args) => {
@@ -38,13 +38,13 @@ function debounce(fn, ms = 300) {
         id = window.setTimeout(() => fn(...args), ms);
     };
 }
-/* ------------------------ live-editing logic ---------------------------- */
+/* live-editing */
 rawBox.addEventListener('input', debounce(async () => {
     // on edit, re-detect JSON vs XML
     lastWasXML = rawBox.value.trimStart().startsWith('<');
     outBox.textContent = await convert(rawBox.value);
 }, 300));
-/* ------------------------- file-upload logic ---------------------------- */
+/*  file-upload */
 file.addEventListener('change', async (e) => {
     var _a;
     const blob = (_a = e.target.files) === null || _a === void 0 ? void 0 : _a[0];
